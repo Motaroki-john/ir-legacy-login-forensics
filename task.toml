@@ -1,0 +1,37 @@
+schema_version = "1.2"
+artifacts = []
+
+[task]
+name = "john-masire/ir-legacy-login-forensics"
+description = "Reconstruct a synthetic account takeover from correlated web, SSO and audit logs."
+authors = []
+keywords = ["forensics", "incident-response", "logs"]
+
+[metadata]
+author_name = "John Masire"
+author_email = "motarokijohn550@gmail.com"
+difficulty = "medium"
+category = "cybersecurity"
+tags = ["forensics", "incident-response"]
+expert_time_estimate_min = 45.0
+junior_time_estimate_min = 120.0
+
+[verifier]
+timeout_sec = 300.0
+
+[verifier.env]
+
+[agent]
+timeout_sec = 72000.0
+
+[environment]
+cpus = 2
+memory_mb = 2048
+build_timeout_sec = 600.0
+os = "linux"
+allow_internet = true
+mcp_servers = []
+
+[environment.env]
+
+[solution.env]
